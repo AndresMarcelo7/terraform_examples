@@ -51,7 +51,7 @@ resource "aws_security_group" "ec2_sg" {
 }
 
 resource "aws_instance" "public_ec2" {
-  ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI
+  ami           = "ami-04681163a08179f28" # Amazon Linux 2 AMI
   instance_type = var.instance_type
   key_name      = var.key_name
   security_groups = [aws_security_group.ec2_sg.name]
